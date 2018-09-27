@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,18 @@
     <title>お小遣い前月比</title>
     <link rel="stylesheet" href="pocketmoney.css">
 </head>
+
 <body>
     <h1>お小遣い前月比</h1>
-    <P>先月のお小遣いを入れてください</P>
+    <P>先月のお小遣いを入れてください(1)</P>
     <input type="number" id="sengetu" size="40" maxlength="18">
-    <p>今月のお小遣いを入れてください</p>
+    <p>今月のお小遣いを入れてください(2)</p>
     <input type="number" id="kongetu" size="40" maxlength="18">
+    <p>※{ (2) ÷ (1) } × 100 = 前月比</p>
+    <p>※先月の値が0だと計算できません</p>
     <button id="button">計算する</button>
     <div id="result-area"></div>
-    <script src="pocketmoney.3.js"></script>
+    <script src="pocketmoney.js"></script>
 </body>
+
 </html>
