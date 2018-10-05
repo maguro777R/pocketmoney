@@ -11,10 +11,10 @@
 
 <body>
     <h1>お小遣い前月比</h1>
-    <P>先月のお小遣いを入れてください(1)</P>
-    <input type="number" id="sengetu" size="40" maxlength="18">
-    <p>今月のお小遣いを入れてください(2)</p>
-    <input type="number" id="kongetu" size="40" maxlength="18">
+    <label for="sengetu">先月のお小遣いを入れてください(1)</label>
+    <input type="number" id="sengetu" size="40" maxlength="18" placeholder="先月のお小遣いを入れてください(1)">
+    <label for="kongetu">今月のお小遣いを入れてください(2)</label>
+    <input type="number" id="kongetu" size="40" maxlength="18" placeholder="今月のお小遣いを入れてください(2)">
     <p>※{ (2) ÷ (1) } × 100 = 前月比</p>
     <p>※先月の値が0だと計算できません</p>
     <button id="button">計算する</button>
